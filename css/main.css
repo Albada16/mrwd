@@ -1,0 +1,432 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: '微軟正黑體';
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    background-color: #C8995C;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 65px;
+    background-color: #4D4D4D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav li a {
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin: 10px;
+    margin-right: 15px;
+    list-style: none;
+    font-size: 20pt;
+}
+
+.login {
+    width: 30px;
+    height: 34px;
+    right: 0;
+    margin-right: 10px;
+}
+
+.l2 {
+    display: none;
+}
+
+
+/*header*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logsear {
+    display: flex;
+    align-items: center;
+    color: #333333;
+    margin-left: 20px;
+}
+
+.logow {
+    white-space: nowrap;
+    display: flex;
+    font-size: 50px;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+.slogo {
+    margin-left: 20px;
+}
+
+.searw {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.sear {
+    width: 100%;
+    height: 40px;
+}
+
+.searicon {
+    width: 40px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ban {
+    width: 88%;
+}
+
+.secnav {
+    margin-top: 30px;
+    height: 100px;
+    background-color: #666666;
+    color: #fff;
+    font-size: 3vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10vw 0 10vw;
+    white-space: nowrap;
+}
+
+.item {
+    display: flex;
+    align-items: flex-end;
+}
+
+.snicon {
+    width: 40%;
+    margin-right: 10px;
+}
+
+
+/*second*/
+
+.second {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 1vw 0 40px;
+    width: 30%;
+}
+
+.top {
+    color: #fff;
+    background-color: #4D4D4D;
+}
+
+.top ul {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 10px 30px;
+    font-size: 2.5vw;
+}
+
+.top li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.bottom {
+    margin-top: 40px;
+    padding: 20px;
+    color: #fff;
+    background-color: #4D4D4D;
+}
+
+.bt {
+    font-size: 2.5vw;
+    margin-bottom: 50px;
+}
+
+.bottom li {
+    list-style: none;
+    margin-bottom: 50px;
+    font-size: 1.5vw;
+}
+
+.bli {
+    margin-bottom: 0;
+}
+
+.left {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 50px 0 1vw;
+    padding: 10px 40px 10px 1vw;
+    width: 100%;
+    background-color: #666666;
+    color: #fff;
+}
+
+.lbt {
+    margin-left: 10px;
+    font-size: 2.8vw;
+}
+
+.picw {
+    display: flex;
+}
+
+.picl {
+    margin-right: 20px;
+}
+
+.pics {
+    width: 100%;
+    margin: 5px 20px 10px 20px;
+}
+
+
+/*footer*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #323333;
+    color: #fff;
+    width: 100%;
+}
+
+.ftop {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.fti {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.fti.b3 {
+    margin-right: 0px;
+}
+
+.fmiddle {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px 0 50px;
+}
+
+.ftti {
+    font-size: 25px;
+}
+
+.ftc {
+    color: #666666;
+    margin-top: 10px;
+}
+
+.fbottom {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-size: 16px;
+}
+
+.burger {
+    display: none;
+}
+
+.fnav {
+    display: none;
+}
+
+
+/*rwd*/
+
+@media screen and (max-width: 768px) {
+    nav li a {
+        font-size: 2.1vw;
+    }
+    nav {
+        justify-content: flex-end;
+    }
+    nav ul {
+        margin-left: 1vw;
+    }
+    nav li {
+        margin-right: 5px;
+    }
+    .l1 {
+        display: none;
+    }
+    .l2 {
+        display: flex;
+        margin-left: 30%;
+        width: 40px;
+    }
+    .logsear {
+        position: absolute;
+        color: #fff;
+        top: -7vw;
+        margin-left: 15px;
+    }
+    .logow {
+        font-size: 4.2vw;
+        margin: 0;
+    }
+    .slogo {
+        margin: 0;
+    }
+    .searw {
+        display: none;
+    }
+    .secnav {
+        height: 100px;
+    }
+    .right {
+        margin: 20px 1vw 0 20px;
+    }
+    .left {
+        margin: 20px 1vw 0 20px;
+    }
+    .bottom {
+        margin-top: 20px;
+    }
+    .bt {
+        margin-bottom: 20px;
+    }
+    .bottom li {
+        margin-bottom: 20px;
+    }
+    .picl .pics {
+        margin: 2px 10px 5px 15px;
+    }
+    .picr .pics {
+        margin: 2px 10px 5px 10px;
+    }
+    .fti {
+        width: 30px;
+    }
+    .ftop {
+        margin: 10px 0 10px 0;
+    }
+    .ftti {
+        font-size: 15px;
+    }
+    .ftc {
+        font-size: 10px;
+    }
+    .fbottom {
+        margin: 20px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    nav {
+        display: none;
+    }
+    .logsear {
+        display: none;
+    }
+    .ban {
+        z-index: 0;
+        width: 100%;
+    }
+    .second {
+        margin-bottom: 5px;
+    }
+    .secnav {
+        margin: 0;
+        height: 50px;
+        padding: 0px 3vw 0 3vw;
+    }
+    .item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .snicon {
+        margin: 0;
+    }
+    .right {
+        display: none;
+    }
+    .left {
+        padding: 10px 20px 10px 0px;
+        margin: 10px;
+    }
+    .footer {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        margin: 5px 6px 0 0;
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+    }
+    .circle {
+        width: 4px;
+        height: 4px;
+        margin-bottom: 2px;
+        background-color: #000;
+        border-radius: 100%;
+        z-index: 5;
+    }
+    .fnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px 15px 10px 15px;
+    }
+    .fnitem {
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fnicon {
+        width: 55%;
+        margin-bottom: 5px;
+    }
+    .fntext {
+        font-size: 12px;
+    }
+}
